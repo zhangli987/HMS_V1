@@ -22,6 +22,11 @@ namespace Nxr.Internal
         Debug.Log("sad");
 
     }
+ void test1()
+    {
+        Debug.Log("sad");
+
+    }
 
     /// <summary>
     /// 
