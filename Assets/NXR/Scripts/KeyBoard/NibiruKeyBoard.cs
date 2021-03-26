@@ -22,6 +22,11 @@ namespace Nxr.Internal
         Debug.Log("sad");
 
     }
+ void test1()
+    {
+        Debug.Log("sad");
+
+    }
 
     /// <summary>
     /// 
@@ -63,7 +68,9 @@ namespace Nxr.Internal
         private string m_strInitChar = " Nibiru KeyBoard ";
 
         private bool isShowing = false;
-
+        /// <summary>
+        /// 初始字符串
+        /// </summary>
         public NibiruKeyBoard()
         {
             // Debug.Log("------>Create NibiruKeyBoard");
