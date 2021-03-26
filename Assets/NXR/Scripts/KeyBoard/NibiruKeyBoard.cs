@@ -63,7 +63,9 @@ namespace Nxr.Internal
         private string m_strInitChar = " Nibiru KeyBoard ";
 
         private bool isShowing = false;
-
+        /// <summary>
+        /// 初始字符串
+        /// </summary>
         public NibiruKeyBoard()
         {
             // Debug.Log("------>Create NibiruKeyBoard");
