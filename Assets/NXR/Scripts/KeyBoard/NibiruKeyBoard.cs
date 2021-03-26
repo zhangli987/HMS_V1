@@ -17,6 +17,11 @@ namespace Nxr.Internal
         ToggleCase = 5,
         Submit = 6,
     }
+    void test()
+    {
+        Debug.Log("sad");
+
+    }
 
     /// <summary>
     /// 
