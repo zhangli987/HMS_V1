@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nibiru.ar"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+  <application
+      android:icon="@drawable/app_icon"
+      android:isGame="true"
+      android:label="@string/app_name"
+      android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+    <meta-data android:name="NibiruVRVersion" android:value="2" />
+    
+    <activity
+        android:name="com.nibiru.lib.xr.unity.NibiruXRUnityActivity"
+        android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:screenOrientation="landscape" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="com.google.intent.category.CARDBOARD" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        <category android:name="com.nibiru.intent.category.NVR" />
+
+
+
+
+
+
+        <category android:name="com.nibiru.intent.category.STUDIO" />
+
+
+
+
+
+
+
+
+      </intent-filter>
+
+      <meta-data
+          android:name="unityplayer.UnityActivity"
+          android:value="true" />
+    
+    	<meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+    </activity>
+
+    <!-- "VOICE", "6DOF", "GESTURE", "RECORD", "MARKER", "RECOGINIZE" !-->
+    <meta-data android:value="6DOF" android:name="NIBIRU_PLUGIN_IDS"/>
+    <meta-data android:value="NxrViewerMain" android:name="NIBIRU_UNITY_VIEWER_NAME"/>
+    <!--0=vr,1=ar-->
+    <meta-data android:value="VR" android:name="HMD_TYPE"/>
+	  <!-- SixDofMode: 0=TM2, 1=Qualcomm -->
+	 <!-- <meta-data android:value="1" android:name="NIBIRU_SIX_DOF_MODE"/> !-->
+   <!-- SixDofType: 0=内置3DOF+位移, 1=Full 6DOF -->
+   <!-- <meta-data android:value="1" android:name="NIBIRU_SIX_DOF_TYPE"/> !-->
+   <!-- 当前APK为加密版本-->
+    <meta-data android:value="0" android:name="NIBIRU_ENCRYPTION_MODE"/>
+   <!-- APK新加密机制：填写工具声明的密钥 -->
+    <meta-data android:value="jQmgH6Fuagw." android:name="NIBIRU_SDK_KEY"/>
+  </application>
+  <!-- Set target sdk version to Lollipop to prevent issues with Marshmallow's runtime permissions. -->
+  <uses-sdk
+      android:minSdkVersion="19"
+      android:targetSdkVersion="22" />
+
+  <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+  <uses-feature
+      android:name="android.hardware.sensor.accelerometer"
+      android:required="true" />
+  <uses-feature
+      android:name="android.hardware.sensor.gyroscope"
+      android:required="true" />
+
+
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+  <uses-permission android:name="android.permission.BLUETOOTH"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+  <!-- VR feature tags. -->
+  <uses-feature
+      android:name="android.software.vr.mode"
+      android:required="false" />
+  <uses-feature
+      android:name="android.hardware.vr.high_performance"
+      android:required="false" />
+  <uses-feature
+      android:name="android.hardware.touchscreen"
+      android:required="false" />
+  <uses-feature
+      android:name="android.hardware.touchscreen.multitouch"
+      android:required="false" />
+  <uses-feature
+      android:name="android.hardware.touchscreen.multitouch.distinct"
+      android:required="false" />
+
+</manifest>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+# Number of markers
+5
+
+# Entries for each marker. Format is:
+#
+# Name of pattern file (relative to this file)	如:hey2.patt
+# Marker width in millimetres (floating point number)	如:100.0
+# 距离主Marker中心点的水平距离	如:0.0，左定义为正，右定义为负
+# 距离主Marker中心点的垂直距离	如:0.0，上定义为正，下定义为负
+# A blank line
+
+panada.patt
+80.0 #80
+0.0
+0.0
+
+songshu.patt
+80.0
+120.0
+70.0
+
+chicken.patt
+80.0
+-120.0
+70.0
+
+haitun.patt
+80.0
+-120.0
+-70.0
+
+haibao.patt
+80.0
+120.0
+-70.0
+
+# High-low gyr Threshold Value
+0.03
+
+# Low Speed PosThd
+60.0
+
+# High Speed PosThd
+0.001
